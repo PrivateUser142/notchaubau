@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotChauBau</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div class="welcome-screen" id="welcomeScreen">
+        <div class="welcome-content">
+            <div class="welcome-avatar">
+                <img src="https://shared.fastly.steamstatic.com/community_assets/images/items/1684100/c90b6d40f26a8f9076c5715853fd70dfa84c7428.gif" alt="Avatar" id="welcomeAvatarImg">
+            </div>
+            <h1 class="welcome-name">NotChauBau</h1>
+            <p class="welcome-subtitle">AGGINYAG</p>
+            <button class="enter-btn" id="enterBtn">
+                <span class="enter-icon">👄</span>
+                Bitch!
+            </button>
+        </div>
+    </div>
+
+    <!-- Background Container -->
+    <div class="bg-container" id="bgContainer"></div>
+    <div class="bg-overlay"></div>
+
+    <div class="container">
+        <!-- Profile -->
+        <div class="profile">
+            <div class="profile-image-wrapper">
+                <img src="https://shared.fastly.steamstatic.com/community_assets/images/items/1684100/c90b6d40f26a8f9076c5715853fd70dfa84c7428.gif" 
+                     alt="Profile" 
+                     class="profile-image"
+                     id="profileImage">
+                <div class="online-indicator"></div>
+            </div>
+            <h1 class="profile-name" id="profileName">davedown</h1>
+            <p class="profile-bio" id="profileBio">Content Creator • Developer • Gamer</p>
+            <div class="profile-badges" id="profileBadges"></div>
+        </div>
+
+        <!-- Music Player -->
+        <div class="music-player" id="musicPlayer">
+            <div class="music-header">
+                <span class="music-icon">🎵</span>
+                <span class="music-title">Now Playing</span>
+                <button class="music-toggle" id="musicToggle" title="Show/Hide Player">
+                    <span id="toggleIcon">▼</span>
+                </button>
+            </div>
+            <div class="music-body" id="musicBody">
+                <div class="music-content">
+                    <img src="https://via.placeholder.com/50" alt="Album Cover" class="music-cover" id="musicCover">
+                    <div class="music-info">
+                        <div class="music-song" id="musicSong">No music playing</div>
+                        <div class="music-artist" id="musicArtist">Add music.mp3 to folder</div>
+                    </div>
+                    <div class="music-controls">
+                        <button class="music-btn" id="prevBtn" title="Previous">⏮</button>
+                        <button class="music-btn music-play-btn" id="playBtn" title="Play/Pause">▶️</button>
+                        <button class="music-btn" id="nextBtn" title="Next">⏭</button>
+                    </div>
+                </div>
+                <div class="music-progress-container">
+                    <span class="music-time" id="currentTime">0:00</span>
+                    <div class="music-progress" id="musicProgress">
+                        <div class="music-progress-bar" id="musicProgressBar"></div>
+                    </div>
+                    <span class="music-time" id="totalTime">0:00</span>
+                </div>
+                <div class="music-volume-container">
+                    <span class="volume-icon" id="volumeIcon">🔊</span>
+                    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50">
+                </div>
+                <div class="music-visualizer" id="visualizer">
+                    <div class="visualizer-bar"></div><div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div><div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div><div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div><div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div><div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div><div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div><div class="visualizer-bar"></div>
+                    <div class="visualizer-bar"></div><div class="visualizer-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Cards -->
+        <div class="status-cards">
+            <div class="status-card discord-card">
+                <div class="status-header">
+                    <span class="status-icon">💬</span>
+                    <span class="status-title">Discord Status</span>
+                </div>
+                <div class="status-content">
+                    <img src="https://shared.fastly.steamstatic.com/community_assets/images/items/1684100/c90b6d40f26a8f9076c5715853fd70dfa84c7428.gif" 
+                         alt="Discord Avatar" 
+                         class="discord-avatar" 
+                         id="discordAvatar">
+                    <div class="discord-info">
+                        <div class="discord-username" id="discordUsername">Loading...</div>
+                        <div class="discord-status" id="discordStatus">
+                            <span class="status-dot offline"></span> Loading...
+                        </div>
+                        <div class="discord-activity" id="discordActivity">Loading...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-card spotify-card">
+                <div class="status-header">
+                    <span class="status-icon">🎵</span>
+                    <span class="status-title">Spotify Activity</span>
+                </div>
+                <div class="status-content" id="spotifyContent">
+                    <div class="not-playing">🎵 Loading...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Links -->
+        <div class="links" id="linksContainer"></div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
