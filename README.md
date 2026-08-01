@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <em>Content Creator • Developer • Gamer</em>
+  <em>Developer • Gamer</em>
 </p>
 
 ---
