@@ -1,5 +1,7 @@
 # NOTCHAUBAU
 
+#Stupid As Fuck
+
 <p align="center">
   <img src="https://shared.fastly.steamstatic.com/community_assets/images/items/1684100/c90b6d40f26a8f9076c5715853fd70dfa84c7428.gif" width="120" alt="Avatar">
 </p>
